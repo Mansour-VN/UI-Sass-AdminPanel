@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif !important;
+}
+
+
+
+body {
+    position: relative;
+   
+  
+    
+}
+
+.card  {
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+.__title  { 
+        position: relative; 
+        padding-left: 32px; 
+        font-size: 20px; 
+        font-weight: 600; 
+        &:before { 
+          content: ""; 
+          position: absolute; 
+          background: orange;
+          top: 50%; 
+          left: 0px; 
+          width: 16px; 
+          height: 32px; 
+          -webkit-transform: translateY(-50%); 
+          transform: translateY(-50%); 
+          border-radius: 4px; 
+        } 
+      }
+
+}
+
+a {
+    text-decoration: none
+}

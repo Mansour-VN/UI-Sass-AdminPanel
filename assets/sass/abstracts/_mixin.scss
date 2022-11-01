@@ -1,0 +1,36 @@
+
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin status($bgColor,$fColor,$content){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $bgColor;
+    color: $fColor;
+    padding: 0 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    //text-align: center;
+    &:before{
+        content: $content;
+    }
+}

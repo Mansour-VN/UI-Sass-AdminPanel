@@ -1,0 +1,108 @@
+//protips in box content
+.Pro-tips {
+    width: 100%;
+    padding: 25px;
+    gap :25px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .__pro-tips__top {
+
+        p {
+            font-size: xx-large;
+        }
+    }
+
+    .__pro-tips__text {
+        // width: 533px;
+        // height: 24px;
+
+        p {
+            color: rgb(126, 126, 126);
+        }
+    }
+
+    .__pro-tips__content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .__prp__content_left {
+            display: flex;
+            gap: 14px;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .tips_1 {
+                width: 100%;
+                gap: 6px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .__tips_1_icon {
+                    width: 64px;
+                    height: 64px;
+                    border: 1px solid rgba(0, 0, 0, 0.24);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        box-shadow: 0px 0px 4px 0px blue;
+                        border: 1px solid rgb(141, 157, 248);
+                        background-color: rgba(192, 192, 192, 0.356);
+                    }
+                }
+
+                .__tips_1_text {
+                    width: 174px;
+                    height: 64px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    .__tips_1_content {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        img{
+                            width: 25px;
+                        }
+                        .new{
+                            @include status($blue,$dark,"new");
+                        }
+                        .smallLable{
+                            @include status(lighten($success,20%) ,$dark,"small lable");
+                        }
+                        .hot{
+                            @include status(lighten($red,20%),$dark,"hot");
+                        }
+                        .popular{
+                            @include status(lighten($success,20%) ,$dark,"Popular");
+                        }
+
+                    }
+                }
+            }
+
+            .tips_2 {
+                @extend .tips_1;
+            }
+
+            .tips_3 {
+                @extend .tips_1;
+            }
+        }
+
+        .__prp__content_right {
+            @extend .__prp__content_left;
+        }
+    }
+}

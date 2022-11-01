@@ -1,0 +1,87 @@
+.container {
+    position: relative;
+    display: flex;
+    // width: 100%;
+    background-color: $theme_color__light_background;
+
+
+
+    .main-box{
+
+        background-color:$theme_color_light;
+        // height: 100vh;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        width: 100%;
+
+
+        @include laptop{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .search-container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4px;
+            padding: 35px;
+        }
+
+        .dashbord{
+            width: 100%;
+            padding-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            height: 100%;
+            overflow-y: auto;
+            background-color:$theme_color__light_background;
+            @include tablet{
+                padding: 35px;
+            }
+
+            h1{
+                padding-bottom: 20px;
+                font-size: xx-large;
+                font-weight: bold;
+
+            }
+            .main-box-content{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                // background-color: silver;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                .main-content {
+                    flex:2 1 550px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+
+                .side-content {
+                    flex:1 1 330px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap:6px;
+                    }
+
+            }
+        }
+
+    }
+
+}

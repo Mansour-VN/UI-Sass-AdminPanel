@@ -1,0 +1,25 @@
+//  cores files
+@import "core/reset";
+@import "core/base";
+// abstract Files
+@import "abstracts/variables";
+@import "component/btn";
+@import "abstracts/mixin";
+
+//layouts
+//mainbox
+@import "layouts/mainbox/content/overview";
+@import "layouts/mainbox/content/productviews";
+@import "layouts/mainbox/content/protips";
+@import "layouts/mainbox/content/getcostomers";
+@import "layouts/mainbox/sidecontent/Comments";
+@import "layouts/mainbox/sidecontent/popularProduct";
+@import "layouts/mainbox/sidecontent/refundrequestsd";
+//sidbar
+@import "layouts/sidbar/sidebar";
+
+//serch
+@import "layouts/search/searchbox";
+
+// pages
+@import "pages/homepage";

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/iconsAnDfont/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <title>Maktab</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                <img src="assets/img/logo-dark.png" alt="">
+            </div>
+            <div class="sidebar__nav">
+                <div class="sidenav__index home">
+                    <box-icon name='home-alt'></box-icon>
+                    <a href="#about">home</a>
+                </div>
+                <div class="sidenav__index product">
+                    <div>
+                        <box-icon type='logo' name='sketch'></box-icon>
+                    </div>
+                    <div class="product_main dropdown">
+                        <a role="button" class="dropdown-btn">product
+                            <box-icon name='chevron-down'></box-icon>
+                        </a>
+                        <div class="dropdown-container">
+                            <a href="#">Dashboard</a>
+                            <a href="#">Drafts</a>
+                            <a href="#">Released</a>
+                            <a href="#">Comments</a>
+                            <a href="#">Scheduled</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidenav__index customers">
+                    <div class="customers_icon">
+                        <box-icon name='user-circle'></box-icon>
+                    </div>
+                    <div class="customers_main dropdown">
+                        <a role="button" class="dropdown-btn">customers
+                            <box-icon name='chevron-down'></box-icon>
+                        </a>
+                        <div class="dropdown-container">
+                            <a href="#">Overview</a>
+                            <a href="#">Customer list</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidenav__index shop">
+                    <div class="shop_icon">
+                        <box-icon name='store'></box-icon>
+                    </div>
+                    <div class="shop_main">
+                        <a href="#contact">shop</a>
+                    </div>
+                </div>
+                <div class="sidenav__index income">
+                    <div class="income_icon">
+                        <box-icon name='circle-three-quarter'></box-icon>
+                    </div>
+                    <div class="income_main dropdown">
+                        <a role="button" class="dropdown-btn">income
+                            <box-icon name='chevron-down'></box-icon>
+                        </a>
+                        <div class="dropdown-container">
+                            <a href="#">Earning</a>
+                            <a href="#">Refunds</a>
+                            <a href="#">Payouts</a>
+                            <a href="#">Statements</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidenav__index Promote">
+                    <div class="promote_icon">
+                        <box-icon name='color'></box-icon>
+                    </div>
+                    <div class="promote_main">
+                        <a href="#contact">Promote</a>
+                    </div>
+                </div>
+            </div>
+            <!--end sidnav-->
+            <!-- side footer by mansur -->
+            <div class="sidebar__footer">
+                <div class="sidebar__footer__top">
+                    <div class="box_icon">
+                        <!--                    <i class='bx bx-question-mark'></i>-->
+                        <box-icon name='question-mark' id="box-icon"></box-icon>
+                    </div>
+                    <span class="text">Help & getting started</span>
+                    <div class="eight"></div>
+                </div>
+                <div class="btn-dark-light">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        <box-icon name='sun' class="bx-sun" ></box-icon>
+                        <box-icon name='moon' class="bx-moon"></box-icon>
+                    </label>
+                </div>
+            </div>
+            <!--  end side footer by mansur  -->
+        </div>
+        <!-- _____________________________start main box -->
+        <div class="main-box">
+            <!-- _________________________search box -->
+
+            <div class="search-container">
+                <box-icon name='menu'></box-icon>
+                <div class="__searchBOX">
+                    <div class="__inner">
+                        <form action="/">
+                            <button type="submit" class="submit_search"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Search.." name="search">
+                        </form>
+                    </div>
+                </div>
+                <div class="__loginBox">
+                    <button>Sing in</button>
+                    <button>Singn up</button>
+                </div>
+            </div>
+            <!--  _________________________search box -->
+
+            <div class="dashbord">
+                <h1>Dashboard</h1>
+                <!-- __________________________mainboxContent -->
+                <div class="main-box-content">
+                    <div class="main-content">
+                        <!-- by morteZa -->
+                        <div class=" card overview">
+                            <div class="__overview__top">
+                                <div class="overview__titr">
+                                    <p class="__title">Overview</p>
+                                </div>
+                                <div class="overview__btn">
+                                    <!----------------- w3schol start-------------------->
+                                    <button class="accordion">All time<box-icon name='chevron-down'></box-icon>
+                                    </button>
+    
+                                    <div class="panel">
+                                        <a href="">All time</a>
+                                        <a href="">In a year</a>
+                                        <a href="">Per month</a>
+                                    </div>
+                                    <!----------------- w3schol end-------------------->
+                                </div>
+    
+                            </div>
+                            <div class="__overview__statistics">
+                                <div class="overview_customers">
+                                    <div class="icon__statistics">
+                                        <box-icon name='bolt-circle'></box-icon>
+                                    </div>
+                                    <h4>Customers</h4>
+                                    <span>1024</span>
+                                    <div class="statistics__Growth">
+                                        <box-icon name='down-arrow-alt'></box-icon>
+                                        <p>37.8 %</p>
+                                    </div>
+                                </div>
+                                <div class="overview_income">
+                                    <div class="icon__statistics">
+                                        <box-icon name='trending-up'></box-icon>
+                                    </div>
+                                    <h4>Income</h4>
+                                    <span>256K</span>
+                                    <div class="statistics__Growth">
+                                        <box-icon name='up-arrow-alt'></box-icon>
+                                        <p>37.8 %</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__overview__welcome">
+                                <div class="welcome__tex">
+                                    <p>Wlcome 854 Customers with a personal message</p>
+                                </div>
+                                <div class="welcome__btn">
+                                    <button>Send massage</button>
+                                </div>
+                            </div>
+                            <div class="__overview_user">
+                                <div class="user-1">
+                                    <div class="user-1__img">
+                                        <img src="./assets/img/avatar.jpg" alt="">
+                                    </div>
+                                    <p>Gladyce</p>
+                                </div>
+                                <div class="user-2">
+                                    <div class="user-1__img">
+                                        <img src="./assets/img/avatar-1.jpg" alt="">
+                                    </div>
+                                    <p>Gladyce</p>
+                                </div>
+                                <div class="user-3">
+                                    <div class="user-1__img">
+                                        <img src="./assets/img/avatar-2.jpg" alt="">
+                                    </div>
+                                    <p>Gladyce</p>
+                                </div>
+                                <div class="Viewall">
+                                    <div class="Viewall__icon">
+                                        <box-icon name='right-arrow-alt'></box-icon>
+                                    </div>
+                                    <p>Viewall</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of by morteZa -->
+                        <div class=" card Product-views">
+                            <div class="__product-views__top">
+                                <div class="__product__titr">
+                                    <p class="__title" >Product views</p>
+                                </div>
+                                <div class="__product__btn">
+                                    <!----------------- w3schol start-------------------->
+                                    <button class="accordion">Last7 days<box-icon name='chevron-down'></box-icon>
+                                    </button>
+    
+                                    <div class="panel">
+                                        <a href="">All time</a>
+                                        <a href="">In a year</a>
+                                        <a href="">Per month</a>
+                                    </div>
+                                    <!----------------- w3schol end-------------------->
+                                </div>
+                            </div>
+                            <div class="__product-views__chart">
+                                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+                            </div>
+                        </div>
+                        <div class=" card Pro-tips">
+                            <div class="__pro-tips__top">
+                                <p class="__title">Pro tips</p>
+                            </div>
+                            <div class="__pro-tips__text">
+                                <p>Need some ideas for the next product?</p>
+                            </div>
+                            <div class="__pro-tips__content">
+                                <div class="__prp__content_left">
+                                    <div class="tips_1">
+                                        <div class="__tips_1_icon">
+                                            <box-icon type='solid' name='calendar'></box-icon>                                        </div>
+                                        <div class="__tips_1_text">
+                                            <div class="__tips_1_titr">
+                                                <p>Early access</p>
+                                            </div>
+                                            <div class="__tips_1_content">
+                                                <div class="new">
+
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <img src="./assets/img/avatar-1.jpg" alt="">
+
+                                                        3mins read</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tips_2">
+                                        <div class="__tips_1_icon">
+                                            <box-icon type='solid' name='edit-alt'></box-icon>                                        </div>
+                                        <div class="__tips_1_text">
+                                            <div class="__tips_1_titr">
+                                                <p>Early access</p>
+                                            </div>
+                                            <div class="__tips_1_content">
+                                                <div class="new">
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <img src="./assets/img/avatar-2.jpg" alt="">
+
+                                                        3mins read</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tips_3">
+                                        <div class="__tips_1_icon">
+                                            <box-icon name='phone-call'></box-icon>                                        </div>
+                                        <div class="__tips_1_text">
+                                            <div class="__tips_1_titr">
+                                                <p>Early access</p>
+                                            </div>
+                                            <div class="__tips_1_content">
+                                                <div class="popular">
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <img src="./assets/img/avatar.jpg" alt="">
+
+                                                        3mins read</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="__prp__content_right">
+                                    <div class="tips_1">
+                                        <div class="__tips_1_icon">
+                                            <box-icon type='solid' name='right-arrow-circle'></box-icon>                                        </div>
+                                        <div class="__tips_1_text">
+                                            <div class="__tips_1_titr">
+                                                <p>Early access</p>
+                                            </div>
+                                            <div class="__tips_1_content">
+                                                <div class="smallLable">
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <img src="./assets/img/avatar-1.jpg" alt="">
+                                                        3mins read</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tips_2">
+                                        <div class="__tips_1_icon">
+                                            <box-icon type='solid' name='camera-movie'></box-icon>                                        </div>
+                                        <div class="__tips_1_text">
+                                            <div class="__tips_1_titr">
+                                                <p>Early access</p>
+                                            </div>
+                                            <div class="__tips_1_content">
+                                                <div class="hot">
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <img src="./assets/img/avatar-2.jpg" alt="">
+                                                        3mins read</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tips_3">
+                                        <div class="__tips_1_icon">
+                                            <box-icon type='solid' name='check-square'></box-icon>                                        </div>
+                                        <div class="__tips_1_text">
+                                            <div class="__tips_1_titr">
+                                                <p>Early access</p>
+                                            </div>
+                                            <div class="__tips_1_content">
+                                                <div class="new">
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <img src="./assets/img/avatar.jpg" alt="">
+                                                        3mins read</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- by morteZa -->
+                        <div class="card get-customers">
+                            <div class="__get-customers__titr">
+                                <span class="__title">Get more customers!</span>
+                            </div>
+    
+                            <div class="__get-customers__text">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quis quae
+                                    voluptate nulla
+                                    hic ducimus possmollitia eos?</p>
+                            </div>
+    
+                            <div class="__get-customers__btn-box">
+                                <button>
+                                    <box-icon type='logo' name='facebook'></box-icon>
+                                    Facebook
+                                </button>
+    
+                                <button>
+                                    <box-icon name='twitter' type='logo'></box-icon>
+                                    Twitter
+                                </button>
+    
+                                <button>
+                                    <box-icon type='logo' name='instagram'></box-icon>
+                                    Instagram
+                                </button>
+                            </div>
+                        </div>
+                        <!--end of morteza-->
+                    </div>
+                    <div class="side-content">
+                        <div class=" card Popular">
+                            <div class="__popular__titr">
+                                <p class="__title">Popular Products</p>
+                            </div>
+
+                            <div class="__popular__text_menu">
+                                <p>Products</p>
+                                <p>Earning</p>
+                            </div>
+
+                            <div class="__popular__user1">
+                                <div class="__popular__user__img">
+                                    <img src="./assets/img/product-pic-1.jpg" alt="">
+                                </div>
+                                <div class="__popular__user__text">
+                                    <div>
+                                        <p>Crypter-NFT UI</p>
+                                        <p>kit</p>
+                                    </div>
+                                    <div>
+                                        <p>$2.453.80</p>
+                                        <p class="active"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__popular__user2">
+                                <div class="__popular__user__img">
+                                    <img src="./assets/img/product-pic-2.jpg" alt="">
+                                </div>
+                                <div class="__popular__user__text">
+                                    <div>
+                                        <p>Crypter-NFT UI</p>
+                                        <p>kit</p>
+                                    </div>
+                                    <div>
+                                        <p>$2.453.80</p>
+                                        <p class="deactive"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__popular__user3">
+                                <div class="__popular__user__img">
+                                    <img src="./assets/img/product-pic-3.jpg" alt="">
+                                </div>
+                                <div class="__popular__user__text">
+                                    <div>
+                                        <p>Crypter-NFT UI</p>
+                                        <p>kit</p>
+                                    </div>
+                                    <div>
+                                        <p>$2.453.80</p>
+                                        <p class="active"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__popular__user4">
+                                <div class="__popular__user__img">
+                                    <img src="./assets/img/product-pic-4.jpg" alt="">
+                                </div>
+                                <div class="__popular__user__text">
+                                    <div>
+                                        <p>Crypter-NFT UI</p>
+                                        <p>kit</p>
+                                    </div>
+                                    <div>
+                                        <p>$2.453.80</p>
+                                        <p class="active"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="__popular__btn">
+                                <button>View all</button>
+                            </div>
+                        </div>
+                        <div class=" card Comments">
+                            <div class="__comments__titr">
+                                <p class="__title">Comments</p>
+                            </div>
+                            <div class="__Comments__user1">
+                                <div class="__comments__user">
+                                    <div class="user-image">
+                                        <img src="./assets/img/avatar-1.jpg" alt="">
+                                    </div>
+                                    <div class="__comments__user__text">
+                                        <p>Ethel<span class="span">@ethel</span></p>
+                                        <p>on Smiles -3D icons</p>
+                                        <p>Great work</p>
+                                        <div class="__comments__user_icon">
+                                            <box-icon name='message-dots'></box-icon>
+                                            <box-icon name='heart'></box-icon>
+                                            <box-icon name='bookmark-alt-minus'></box-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__Comments__user2">
+                                <div class="__comments__user">
+                                    <div class="user-image">
+                                        <img src="./assets/img/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="__comments__user__text">
+                                        <p>Jazmyn<span class="span">@jaz.designer</span></p>                                        <p>on Smiles -3D icons</p>
+                                        <p>Great work</p>
+                                        <div class="__comments__user_icon">
+                                            <box-icon name='message-dots'></box-icon>
+                                            <box-icon name='heart'></box-icon>
+                                            <box-icon name='bookmark-alt-minus'></box-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__Comments__user3">
+                                <div class="__comments__user">
+                                    <div class="user-image">
+                                        <img src="./assets/img/avatar-2.jpg" alt="">
+                                    </div>
+                                    <div class="__comments__user__text">
+                                        <p>Jazmyn<span class="span">@jaz.designer</span></p>                                        <p>on Smiles -3D icons</p>
+                                        <p>on Smiles -3D icons</p>
+                                        <p>Great work</p>
+                                        <div class="__comments__user_icon">
+                                            <box-icon name='message-dots'></box-icon>
+                                            <box-icon name='heart'></box-icon>
+                                            <box-icon name='bookmark-alt-minus'></box-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__Comments__btn">
+                                <button>View all</button>
+                            </div>
+                        </div>
+                        <div class="card Refund-requestsd">
+                            <div class=" __Refund__titr">
+                                <p class="__title" >Refund Rrequestsd</p>
+                            </div>
+    
+                            <div class="__refund__content">
+                                <div class="__refund__icon">
+                                    <box-icon name='store-alt'></box-icon>
+                                </div>
+                                <div class="__refund__text">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, omnis!</p>
+                                </div>
+    
+                            </div>
+                            
+                            <div class="__popular__btn">
+                                <button>View all</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ____________________________end mainboxContent -->
+            </div>
+        </div>
+        <!-- ___________________________end of main box -->
+    </div>
+    <!--end container-->
+    <script src="./assets/iconsAnDfont/iconS.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/overview.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src ="assets/js/chart.js"></script>
+</body>
+
+</html>
